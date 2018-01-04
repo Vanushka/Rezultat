@@ -1,51 +1,149 @@
-const NODE_ENV = process.env.NODE_ENV;
+const { resolve } = require('path');
 
 const webpack = require('webpack');
-const fs      = require('fs');
-const path    = require('path'),
-      join    = path.join,
-      resolve = path.resolve;
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const OpenBrowserPlugin = require('open-browser-webpack-plugin');
 
-const getConfig = require('hjs-webpack');
+const config = {
+  devtool: 'cheap-module-eval-source-map',
 
-const isDev  = NODE_ENV === 'development';
+  entry: [
+    'react-hot-loader/patch',
+    'webpack-dev-server/client?http://localhost:8080',
+    'webpack/hot/only-dev-server',
+    './main.js',
+    './assets/scss/main.scss',
+  ],
 
-const root    = resolve(__dirname);
-const src     = join(root, 'src');
-const modules = join(root, 'node_modules');
-const dest    = join(root, 'dist');
+  output: {
+    filename: 'bundle.js',
+    path: resolve(__dirname, 'dist'),
+    publicPath: '',
+  },
 
-var config = getConfig({
-  isDev: isDev,
-  in: join(src, 'App.js'),
-  out: dest,
-  html: function (context) {
-    return {
-      'index.html': context.defaultTemplate({
-        title: 'Single Page App',
-        publicPath: isDev ? 'http://localhost:3000/' : '',
-        meta: {
-          'name': 'Single Page App learn project',
-          'description': ''
-        }
-      })
-    }
-  }
-});
+  context: resolve(__dirname, 'app'),
 
+  devServer: {
+    hot: true,
+    contentBase: resolve(__dirname, 'build'),
+    publicPath: '/'
+  },
 
-module.exports = config;
-module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
+        enforce: "pre",
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: "eslint-loader"
+      },
+      {
+        test: /\.js$/,
+        loaders: [
+          'babel-loader',
+        ],
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.scss$/,
+        exclude: /node_modules/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            'css-loader',
+            {
+              loader: 'sass-loader',
+              query: {
+                sourceMap: false,
+              },
+            },
+          ],
+          publicPath: '../'
+        }),
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
         use: [
-          'style-loader',
-          { loader: 'css-loader', options: { importLoaders: 1 } },
-          'postcss-loader'
-        ]
-      }
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+              mimetype: 'image/png',
+              name: 'images/[name].[ext]',
+            }
+          }
+        ],
+      },
+      {
+        test: /\.eot(\?v=\d+.\d+.\d+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'fonts/[name].[ext]'
+            }
+          }
+        ],
+      },
+      {
+        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+              mimetype: 'application/font-woff',
+              name: 'fonts/[name].[ext]',
+            }
+          }
+        ],
+      },
+      {
+        test: /\.[ot]tf(\?v=\d+.\d+.\d+)?$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+              mimetype: 'application/octet-stream',
+              name: 'fonts/[name].[ext]',
+            }
+          }
+        ],
+      },
+      {
+        test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+              mimetype: 'image/svg+xml',
+              name: 'images/[name].[ext]',
+            }
+          }
+        ],
+      },
     ]
-  }
-}
+  },
+
+  plugins: [
+    new webpack.LoaderOptionsPlugin({
+      test: /\.js$/,
+      options: {
+        eslint: {
+          configFile: resolve(__dirname, '.eslintrc'),
+          cache: false,
+        }
+      },
+    }),
+    new webpack.optimize.ModuleConcatenationPlugin(),
+    new ExtractTextPlugin({ filename: './styles/style.css', disable: false, allChunks: true }),
+    new CopyWebpackPlugin([{ from: 'vendors', to: 'vendors' }]),
+    new OpenBrowserPlugin({ url: 'http://localhost:8080' }),
+    new webpack.HotModuleReplacementPlugin(),
+  ],
+};
+
+module.exports = config;
