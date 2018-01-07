@@ -1,0 +1,9 @@
+.ui.menu .active.item{
+  background-color: rgb(35, 218, 174);
+  color: white;
+}
+
+.ui.menu:not(.vertical) .item:hover{
+  background-color: rgb(35, 218, 174);
+  color: white;
+}

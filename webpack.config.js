@@ -13,7 +13,6 @@ const config = {
     'webpack-dev-server/client?http://localhost:8080',
     'webpack/hot/only-dev-server',
     './main.js',
-    './assets/scss/main.scss',
   ],
 
   output: {
@@ -27,16 +26,16 @@ const config = {
   devServer: {
     hot: true,
     contentBase: resolve(__dirname, 'build'),
-    publicPath: '/'
+    publicPath: '/',
   },
 
   module: {
     rules: [
       {
-        enforce: "pre",
+        enforce: 'pre',
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: "eslint-loader"
+        loader: 'eslint-loader',
       },
       {
         test: /\.js$/,
@@ -44,6 +43,13 @@ const config = {
           'babel-loader',
         ],
         exclude: /node_modules/,
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader', 'resolve-url-loader'],
+        include: [
+          /node_modules/,
+        ],
       },
       {
         test: /\.scss$/,
@@ -59,7 +65,7 @@ const config = {
               },
             },
           ],
-          publicPath: '../'
+          publicPath: '../',
         }),
       },
       {
@@ -71,8 +77,8 @@ const config = {
               limit: 8192,
               mimetype: 'image/png',
               name: 'images/[name].[ext]',
-            }
-          }
+            },
+          },
         ],
       },
       {
@@ -81,9 +87,9 @@ const config = {
           {
             loader: 'file-loader',
             options: {
-              name: 'fonts/[name].[ext]'
-            }
-          }
+              name: 'fonts/[name].[ext]',
+            },
+          },
         ],
       },
       {
@@ -95,8 +101,8 @@ const config = {
               limit: 8192,
               mimetype: 'application/font-woff',
               name: 'fonts/[name].[ext]',
-            }
-          }
+            },
+          },
         ],
       },
       {
@@ -108,8 +114,8 @@ const config = {
               limit: 8192,
               mimetype: 'application/octet-stream',
               name: 'fonts/[name].[ext]',
-            }
-          }
+            },
+          },
         ],
       },
       {
@@ -121,11 +127,11 @@ const config = {
               limit: 8192,
               mimetype: 'image/svg+xml',
               name: 'images/[name].[ext]',
-            }
-          }
+            },
+          },
         ],
       },
-    ]
+    ],
   },
 
   plugins: [
@@ -135,7 +141,7 @@ const config = {
         eslint: {
           configFile: resolve(__dirname, '.eslintrc'),
           cache: false,
-        }
+        },
       },
     }),
     new webpack.optimize.ModuleConcatenationPlugin(),
