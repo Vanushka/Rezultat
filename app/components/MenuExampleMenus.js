@@ -22,24 +22,13 @@ export default class MenuExampleMenus extends Component {
         <Menu.Item name='For suppliers' active={activeItem === 'For suppliers'} onClick={this.handleItemClick}>
           Для поставщиков
         </Menu.Item>
-
         <Menu.Item name='SDO' active={activeItem === 'SDO'} onClick={this.handleItemClick}>
-          СДО
+        СДО
         </Menu.Item>
 
         <Menu.Item name='contact' active={activeItem === 'contact'} onClick={this.handleItemClick}>
           Контакты
         </Menu.Item>
-
-        <Menu.Menu position='right'>
-          <Menu.Item name='signup' active={activeItem === 'signup'} onClick={this.handleItemClick}>
-           Sign Up
-          </Menu.Item>
-
-          <Menu.Item name='help' active={activeItem === 'help'} onClick={this.handleItemClick}>
-           Help
-          </Menu.Item>
-        </Menu.Menu>
       </Menu>
     )
   }

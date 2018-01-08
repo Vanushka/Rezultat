@@ -1,1 +1,7 @@
+@import "../../../node_modules/semantic-ui-css/semantic.min.css";
 @import "menu";
+@import "header";
+
+body {
+  background-color: rgb(247,247,247);
+}
