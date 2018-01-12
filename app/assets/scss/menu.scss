@@ -4,13 +4,6 @@
   margin: 0;
 }
 
-.ui.menu:not(.vertical) .item:hover{
-  text-align: center;
-  display: block;
-  background-color: rgb(35, 218, 174);
-  color: white;
-}
-
 .ui.menu:not(.vertical) .item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -26,10 +19,19 @@
   width: 20%;
   padding-left: 0;
   margin: 0 auto;
+  color: #fff;
+  background-color: rgb(0,127,205);
+}
+
+.ui.menu:not(.vertical) .item:hover{
+  text-align: center;
+  display: block;
+  background-color: rgb(0,149,218);
+  color: white;
 }
 
 .ui.menu .active.item{
   display: block;
-  background-color: rgb(35, 218, 174);
+  background-color: rgb(0,149,218);
   color: white;
 }
