@@ -1,0 +1,58 @@
+#Suppliers {
+  background: linear-gradient(155deg, #2b037e, #263caf, #1760c8, #0096ff, #00b5c6, #1ad3df, #a3fffc);
+  color: #fff;
+  height: 650px;
+  padding-top: 130px;
+  padding-left: 160px;
+  display: block;
+  position: relative;
+}
+
+#VerticalLine2 {
+  border-right: 1px solid silver;
+  width: 5px;
+  height: 400px;
+  margin-left: 90px;
+  float: right;
+  margin-right: 20px;
+  margin-left: 0;
+}
+
+.Button_4 {
+  ont-family: Lato,Segoe UI,Roboto,Oxygen,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+  font-style: normal;
+  margin-left: 340px;
+  margin-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: none;
+  border-radius: 4px;
+  border: 2px solid #fff;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  display: block;
+  width: 150px;
+  font-size: 15px;
+  }
+
+  .Button_4:hover {
+  color: #00a3ff;
+  background-color: #fff;
+  border: 2px solid #fff;
+  }
+
+  .Button_4:focus {
+  color: #fff;
+  background-color: #1760c8;
+  border: 2px solid #1760c8;
+  }
+
+  .Button_4:active {
+  color: #fff;
+  background-color: #1760c8;
+  border: 2px solid #1760c8;
+  }

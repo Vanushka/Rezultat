@@ -1,0 +1,76 @@
+#forCustomers{
+  position: relative;
+  display: block;
+  color: #1760c8;
+  text-align: right;
+  height: 620px;
+  margin: 0 auto;
+  padding-top: 110px;
+}
+
+h1 {
+  font-family: Lato,Segoe UI,Roboto,Oxygen,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+  margin: calc(2rem - .14285714em) -47px 1rem;
+  padding-top: 50px;
+  font-size: 2.5rem;
+}
+
+.icon2 {
+  float: left;
+  width: 550px;
+  height: 550px;
+  margin-top: -650px;
+  margin-left: 70px;
+}
+
+p {
+  font-family: Lato,Segoe UI,Roboto,Oxygen,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+  font-size: 18px;
+}
+
+#VerticalLine1 {
+  border-right: 1px solid #1760c8;
+  width: 5px;
+  height: 400px;
+  float: right;
+  margin-right: 600px;
+  margin-top: -300px;
+}
+
+.Button_3 {
+  font-family: Lato,Segoe UI,Roboto,Oxygen,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  text-align: center;
+  margin-right: -280px;
+  margin-top: 34px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background: none;
+  border-radius: 4px;
+  border: 2px solid #1760c8;
+  color: #1760c8;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  }
+
+  .Button_3:hover {
+  color: #fff;
+  background-color: #1760c8;
+  border: 2px solid #1760c8;
+  }
+
+  .Button_3:focus {
+  color: #fff;
+  background-color: #1760c8;
+  border: 2px solid #1760c8;
+  }
+
+  .Button_3:active {
+  color: #fff;
+  background-color: #1760c8;
+  border: 2px solid #1760c8;
+  }

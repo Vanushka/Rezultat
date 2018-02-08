@@ -14,8 +14,8 @@
     "es6": true
   },
   "rules": {
-    "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
     "extends": "eslint:recommended",
+    "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
     "builtinGlobals": true,
     "jsx-quotes": [1, "prefer-single"],
     "space-before-function-paren": "off",
@@ -25,6 +25,8 @@
     "global-require": "off",
     "semi": "warn",
     "arrow-body-style": "off",
-    "max-len": 0
+    "max-len": 0,
+    "react/jsx-indent": [<enabled>, 'tab', 8],
+    "never": ["personal"]
   }
 }

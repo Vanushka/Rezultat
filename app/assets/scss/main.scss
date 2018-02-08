@@ -1,29 +1,19 @@
 @import "../../../node_modules/semantic-ui-css/semantic.min.css";
-@import "menu";
 @import "header";
+@import "simpleslider";
+@import "aboutus";
+@import "forcustomers";
+@import "forsuppliers";
+@import "SDO";
+@import "contacts";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 
-body {
-  background-color: rgb(0,163,255);
-  height: 1500px;
+* {
+  margin: 0 ;
+  padding: 0 ;
 }
 
-p {
-  color: #fff;
-}
-
-a {
-  margin-left: 20px;
-  text-align: center;
-  color: rgb(105,106,108);
-  cursor: pointer;
-  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
-  font-size: 17px;
-  display: inline-block;
-}
-
-a:hover {
-  border-bottom: 3px solid rgb(0,79,134);
-  color: rgb(0,79,134);
-  text-align: center;
-  display: inline-block;
+img {
+  margin: 0;
 }
