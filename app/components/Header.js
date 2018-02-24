@@ -6,21 +6,21 @@ export default class Header extends Component {
   render() {
     return (
       <div id='header' className='HeaderClone'>
-        <img a='#Home' className='icon' alt='Картинка' src='images/logo_1.png' />
+        <a href='#Home'><img className='icon' alt='Картинка' src='images/logo_1.png' /></a>
         <div className='Link'>
           <div>
             <ul>
               <li>
-                <a className='LinkInside' href='#ContainerEx'>О нас</a>
+                <a className='LinkInside' href='#AboutUs2'>О нас</a>
               </li>
               <li>
-                <a className='LinkInside' href='#forCustomers'>Для заказчиков</a>
+                <a className='LinkInside' href='#ForCustomers2'>Для заказчиков</a>
               </li>
               <li>
-                <a className='LinkInside' href='#Suppliers'>Для поставщиков</a>
+                <a className='LinkInside' href='#ForSuppliers2'>Для поставщиков</a>
               </li>
               <li>
-                <a className='LinkInside' href='#SDO'>СДО</a>
+                <a className='LinkInside' href='#SDO2'>СДО</a>
               </li>
               <li>
                 <a className='LinkInside' href='#Contacts'>Контакты</a>

@@ -1,9 +1,17 @@
+#ForCustomers2 {
+  width: 10px;
+  height: 10px;
+  display:  block;
+  float: left;
+  margin-top: -153px;
+}
+
 #forCustomers{
   position: relative;
   display: block;
   color: #1760c8;
   text-align: right;
-  height: 620px;
+  height: 675px;
   margin: 0 auto;
   padding-top: 110px;
 }
@@ -65,12 +73,12 @@ p {
 
   .Button_3:focus {
   color: #fff;
-  background-color: #1760c8;
-  border: 2px solid #1760c8;
+  background-color: #009dff;
+  border: 2px solid #009dff;
   }
 
   .Button_3:active {
   color: #fff;
-  background-color: #1760c8;
-  border: 2px solid #1760c8;
+  background-color: #009dff;
+  border: 2px solid #009dff;
   }

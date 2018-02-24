@@ -18,7 +18,7 @@ export default class SimpleSlider extends Component {
       slidesToScroll: 1,
       autoplay: true,
       pauseOnHover: false,
-      autoplaySpeed: 7000,
+      autoplaySpeed: 5000,
     };
     return (
       <Slider {...settings}>

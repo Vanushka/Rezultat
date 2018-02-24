@@ -1,8 +1,17 @@
+#SDO2 {
+  width: 10px;
+  height: 10px;
+  display:  block;
+  float: left;
+  margin-top: -153px;
+  visibility: hidden;
+}
+
 #SDO{
   position: relative;
   display: block;
   color: #1760c8;
-  height: 633px;
+  height: 675px;
   padding-top: 70px;
   text-align: right;
 }
@@ -31,7 +40,7 @@
 .Button_5 {
   font-family: Lato,Segoe UI,Roboto,Oxygen,Cantarell,Open Sans,Helvetica Neue,sans-serif;
   font-style: normal;
-  margin-right: 450px;
+  margin-right: 485px;
   margin-top: 0;
   padding-left: 30px;
   padding-right: 30px;
@@ -56,12 +65,12 @@
 
   .Button_5:focus {
   color: #fff;
-  background-color: #1760c8;
-  border: 2px solid #1760c8;
+  background-color: #009dff;
+  border: 2px solid #009dff;
   }
 
   .Button_5:active {
   color: #fff;
-  background-color: #1760c8;
-  border: 2px solid #1760c8;
+  background-color: #009dff;
+  border: 2px solid #009dff;
   }

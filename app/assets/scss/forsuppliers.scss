@@ -1,7 +1,16 @@
+#ForSuppliers2 {
+  width: 10px;
+  height: 10px;
+  display:  block;
+  float: left;
+  margin-top: -153px;
+  visibility: hidden;
+}
+
 #Suppliers {
   background: linear-gradient(155deg, #2b037e, #263caf, #1760c8, #0096ff, #00b5c6, #1ad3df, #a3fffc);
   color: #fff;
-  height: 650px;
+  height: 675px;
   padding-top: 130px;
   padding-left: 160px;
   display: block;
@@ -9,7 +18,7 @@
 }
 
 #VerticalLine2 {
-  border-right: 1px solid silver;
+  border-right: 1px solid #fff;
   width: 5px;
   height: 400px;
   margin-left: 90px;

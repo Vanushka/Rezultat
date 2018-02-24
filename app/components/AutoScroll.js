@@ -1,12 +1,12 @@
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import { Scroll, ScrollProvider, ScrollLink } from 'react-skroll'
 
 class Demo extends Component {
   render() {
     return (
-      <div style={{height: '100%'}}>
+      <div style={style.wrapper}>
         <nav>
-        {
-          this.props.scroll.children.map((child, index) =>
             <ScrollLink key={index} index={index} to={child.name}>
               {child.name}
             </ScrollLink>
@@ -34,9 +34,9 @@ class Demo extends Component {
   }
 }
 
-ReactDOM.render(
+ReactDOM.hydrate(
   <ScrollProvider>
     <Demo />
   </ScrollProvider>,
-  document.getElementById('app')
-)
+  document.getElementById('render')
+);

@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Header } from 'semantic-ui-react';
 import img from '../assets/images/bussiness.png';
 
+
 const AboutUs = () => (
     <div id='ContainerEx'>
       <div>
@@ -9,8 +10,8 @@ const AboutUs = () => (
       </div>
       <div id='VerticalLine' />
   <Container text>
-    <Header as='h2' data-aos='fade-right'>О нас</Header>
-    <p className='Text' >ООО "Результат" - центр информационно-технической и правовой поддержки.<br />
+    <Header as='h2'>О нас</Header>
+    <p className='Text' >ООО Результат - центр информационно-технической и правовой поддержки.<br />
     Основные направления деятельности:<br />
       - повышение квалификации и профессиональная подготовка;<br />
       - сопровождение деятельности заказчиков в рамках 44 и 223-ФЗ;<br />
@@ -20,7 +21,7 @@ const AboutUs = () => (
       - решение юридических вопросов.<br />
     </p>
   </Container>
-  <a className='Button_2' href='1'>Подробнее...</a>
+  <a className='Button_2' href='/about'>Подробнее...</a>
     </div>
 );
 

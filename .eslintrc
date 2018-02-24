@@ -27,6 +27,7 @@
     "arrow-body-style": "off",
     "max-len": 0,
     "react/jsx-indent": [<enabled>, 'tab', 8],
-    "never": ["personal"]
+    "never": ["personal"],
+    "import/imports-first": [ "warn", "DISABLE-absolute-first" ],
   }
 }

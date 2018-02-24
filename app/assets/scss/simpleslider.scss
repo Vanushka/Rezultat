@@ -1,12 +1,12 @@
 .slick-slider {
     margin-bottom: 0;
-    height: 768px;
+    height: 828px;
     display: block;
     margin: 0 auto;
     overflow: hidden;
 }
 
-.left, aligned {
+.left,aligned {
   margin-top: 10%;
 }
 
@@ -15,7 +15,7 @@
     outline: none;
     background-size: 100%;
     width: 1440px;
-    height: 720px;
+    height: 761px;
     display: block;
     position: relative;
 }
@@ -39,7 +39,7 @@
 }
 
 .slick-dots li button:before {
-    font-size: 9px;
+    font-size: 10px;
     line-height: 20px;
     position: absolute;
     left: 0;
@@ -59,6 +59,7 @@
     color: #123c8b;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
 }
 
 .slick-prev {
