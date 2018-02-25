@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import img from '../assets/images/logo_1.png';
 import InputExampleActionDropdown from './InputExampleActionDropdown';
 
@@ -6,27 +7,27 @@ export default class Header extends Component {
   render() {
     return (
       <div id='header' className='HeaderClone'>
-        <a href='#Home'><img className='icon' alt='Картинка' src='images/logo_1.png' /></a>
+        <Link to='/' hash='#Home'><img className='icon' alt='Картинка' src='images/logo_1.png' /></Link>
         <div className='Link'>
           <div>
             <ul>
               <li>
-                <a className='LinkInside' href='#AboutUs2'>О нас</a>
+                <Link className='LinkInside' activeClassName='active' to='/#AboutUs' hash='#AboutUs'>О нас</Link>
               </li>
               <li>
-                <a className='LinkInside' href='#ForCustomers2'>Для заказчиков</a>
+                <Link className='LinkInside' activeClassName='active' to='/#ForCustomers' hash='#ForCustomers' >Для заказчиков</Link>
               </li>
               <li>
-                <a className='LinkInside' href='#ForSuppliers2'>Для поставщиков</a>
+                <Link className='LinkInside' activeClassName='active' to='/#ForSuppliers' hash='#ForSuppliers'>Для поставщиков</Link>
               </li>
               <li>
-                <a className='LinkInside' href='#SDO2'>СДО</a>
+                <Link className='LinkInside' activeClassName='active' to='/#SDO' hash='#SDO' >СДО</Link>
               </li>
               <li>
-                <a className='LinkInside' href='#Contacts'>Контакты</a>
+                <Link className='LinkInside' activeClassName='active' to='/#Contacts' hash='#Contacts'>Контакты</Link>
               </li>
             </ul>
-            <a className='Button_1' href="#callbackwidget">Заказать звонок</a>
+            <a className='Button_1' href='#callbackwidget'>Заказать звонок</a>
           </div>
         </div>
         <div><InputExampleActionDropdown /></div>

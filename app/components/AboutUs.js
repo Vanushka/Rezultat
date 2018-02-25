@@ -1,10 +1,12 @@
 import React from 'react';
 import { Container, Header } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 import img from '../assets/images/bussiness.png';
 
 
 const AboutUs = () => (
     <div id='ContainerEx'>
+      <div id='AboutUs' />
       <div>
         <img className='icon1' alt='Картинка' src='images/bussiness.png' />
       </div>
@@ -21,7 +23,7 @@ const AboutUs = () => (
       - решение юридических вопросов.<br />
     </p>
   </Container>
-  <a className='Button_2' href='/about'>Подробнее...</a>
+  <Link className='Button_2' to='/about'>Подробнее...</Link>
     </div>
 );
 

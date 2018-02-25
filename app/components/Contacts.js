@@ -1,14 +1,28 @@
 import React from 'react';
-import { Container, Divider } from 'semantic-ui-react';
+import { Button, Form, Container, Divider } from 'semantic-ui-react';
 
 const ContainerExampleAlignment = () => (
   <div id='Contacts'>
     <Container textAlign='justified'>
       <Divider />
       <h1>Контакты</h1>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede link mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede link mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
     </Container>
+    <Form>
+      <Form.Field>
+        <input placeholder='ФИО' />
+      </Form.Field>
+      <Form.Field>
+        <input placeholder='E-mail' />
+      </Form.Field>
+      <Form.Field>
+        <input placeholder='+7(' />
+      </Form.Field>
+      <Form.Field>
+        <Form.Radio label='Заказчик' control='input' value='ruby' type='radio' name='htmlRadios' />
+        <Form.Radio label='Поставщик' control='input' value='ruby' type='radio' name='htmlRadios' />
+      </Form.Field>
+      <Button className='Button_2' type='submit'>Отправить</Button>
+    </Form>
   </div>
 );
 

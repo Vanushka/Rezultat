@@ -1,9 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Container } from 'semantic-ui-react';
 import img from '../assets/images/bussiness3.png';
 
 const ContainerExampleContainer = () => (
-  <div id='SDO'>
+  <div id='sdo'>
+    <div id='SDO' />
     <Container>
       <h1 className='sdoF'>Система дистанционного обучения</h1>
       <p>Дистанционное обучение по очному курсу повышения квалификации <br />с выдачей удостоверения о повышении квалификации или по программе <br />профессиональной переподготовки с выдачей диплома о <br />профессиональной переподготовке.</p>
@@ -12,7 +14,7 @@ const ContainerExampleContainer = () => (
     </Container>
     <div id='VerticalLine3' />
     <img className='icon3' alt='Картинка' src='images/bussiness3.png' />
-    <a className='Button_5' href='1'>Подробнее...</a>
+    <Link className='Button_5' to={{ pathname: '/SistemsDO' }}>Подробнее...</Link>
   </div>
 );
 

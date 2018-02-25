@@ -1,0 +1,17 @@
+#about {
+  background: linear-gradient(155deg, #2b037e, #263caf, #1760c8, #0096ff, #00b5c6, #1ad3df, #a3fffc);
+  height: 835px;
+  margin-top: -10px;
+  display: block;
+  position: relative;
+}
+
+.aboutIcon {
+  position: absolute;
+  border-radius: 1000px;
+  margin-top: 165px;
+  margin-left: 480px;
+  width: 450px;
+  height: 450px;
+  z-index: 100;
+}
