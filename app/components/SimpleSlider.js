@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Slider from 'react-slick'
+import Slider from 'react-slick';
 import '../assets/images/rezultat1.png';
 import '../assets/images/rezultat2.png';
 import '../assets/images/rezultat3.png';

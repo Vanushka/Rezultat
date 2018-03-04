@@ -14,7 +14,7 @@ const ContainerExampleContainer = () => (
     </Container>
     <div id='VerticalLine3' />
     <img className='icon3' alt='Картинка' src='images/bussiness3.png' />
-    <Link className='Button_5' to={{ pathname: '/SistemsDO' }}>Подробнее...</Link>
+    <Link className='Button_5' href='/SistemsDO' to='/SistemsDO'>Подробнее...</Link>
   </div>
 );
 

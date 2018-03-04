@@ -23,7 +23,7 @@ const AboutUs = () => (
       - решение юридических вопросов.<br />
     </p>
   </Container>
-  <Link className='Button_2' to='/about'>Подробнее...</Link>
+  <Link className='Button_2' to='/about' href='/about'>Подробнее...</Link>
     </div>
 );
 

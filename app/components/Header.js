@@ -1,30 +1,33 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { HashLink as alias } from 'react-router-hash-link';
 import img from '../assets/images/logo_1.png';
 import InputExampleActionDropdown from './InputExampleActionDropdown';
+import style from '../assets/scss/style.scss';
 
 export default class Header extends Component {
   render() {
     return (
       <div id='header' className='HeaderClone'>
-        <Link to='/' hash='#Home'><img className='icon' alt='Картинка' src='images/logo_1.png' /></Link>
+        <div id='Home' />
+        <alias to='/#Home' activeClassName='current' href='/#Home'><img className='icon' alt='Картинка' src='images/logo_1.png' /></alias>
         <div className='Link'>
           <div>
             <ul>
               <li>
-                <Link className='LinkInside' activeClassName='active' to='/#AboutUs' hash='#AboutUs'>О нас</Link>
+                <NavLink className='LinkInside' smooth to='/about' exact activeClassName='current' href='/#AboutUs'>О нас</NavLink>
               </li>
               <li>
-                <Link className='LinkInside' activeClassName='active' to='/#ForCustomers' hash='#ForCustomers' >Для заказчиков</Link>
+                <NavLink className='LinkInside' smooth to='/#ForCustomers' exact activeClassName='current' href='/#ForCustomers' >Для заказчиков</NavLink>
               </li>
               <li>
-                <Link className='LinkInside' activeClassName='active' to='/#ForSuppliers' hash='#ForSuppliers'>Для поставщиков</Link>
+                <NavLink className='LinkInside' smooth to='/#ForSuppliers' exact activeClassName='current' href='/#ForSuppliers'>Для поставщиков</NavLink>
               </li>
               <li>
-                <Link className='LinkInside' activeClassName='active' to='/#SDO' hash='#SDO' >СДО</Link>
+                <NavLink className='LinkInside' smooth to='/#SDO' exact activeClassName='current' href='/#SDO' >СДО</NavLink>
               </li>
               <li>
-                <Link className='LinkInside' activeClassName='active' to='/#Contacts' hash='#Contacts'>Контакты</Link>
+                <NavLink className='LinkInside' smooth to='/#Contacts' exact activeClassName='current' href='/#Contacts'>Контакты</NavLink>
               </li>
             </ul>
             <a className='Button_1' href='#callbackwidget'>Заказать звонок</a>

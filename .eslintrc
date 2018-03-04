@@ -16,10 +16,10 @@
   "rules": {
     "extends": "eslint:recommended",
     "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
-    "builtinGlobals": true,
+    "builtinGlobals": false,
     "jsx-quotes": [1, "prefer-single"],
     "space-before-function-paren": "off",
-    "react/prefer-stateless-function": "warn",
+    "react/prefer-stateless-function": "ignorePureComponents",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "linebreak-style": "off",
     "global-require": "off",
@@ -29,5 +29,6 @@
     "react/jsx-indent": [<enabled>, 'tab', 8],
     "never": ["personal"],
     "import/imports-first": [ "warn", "DISABLE-absolute-first" ],
+    "hoist": "never"
   }
 }

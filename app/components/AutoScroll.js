@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { Scroll, ScrollProvider, ScrollLink } from 'react-skroll'
+import { Scroll, ScrollProvider, ScrollLink } from 'react-skroll';
 
 class Demo extends Component {
   render() {
@@ -16,26 +16,26 @@ class Demo extends Component {
 
         <Scroll>
           {/* name: optional, used to generate the navigator */}
-          <section name="Home">
+          <section name='Home'>
             ...
-            <ScrollLink to="About" />
+            <ScrollLink to='AboutUs' />
           </section>
-          <section name="About">
+          <section name='About'>
             ...
-            <ScrollLink to="Contact" />
+            <ScrollLink to='Contact' />
           </section>
-          <section name="Contact">
+          <section name='Contact'>
             ...
-            <ScrollLink to="Home" />
+            <ScrollLink to='Home' />
           </section>
         </Scroll>
       </div>
-    )
+    );
   }
 }
 
 ReactDOM.hydrate(
-  <ScrollProvider>
+  <ScrollProvider autoScroll={true}>
     <Demo />
   </ScrollProvider>,
   document.getElementById('render')

@@ -2,6 +2,7 @@
   width: 10px;
   height: 10px;
   display:  block;
+  cursor: pointer;
   float: left;
   top: 0;
 }
@@ -67,17 +68,6 @@ ul, li {
   text-align: center;
   display: inline-block;
 }
-
-.LinkInside:active {
-  border-bottom: 3px solid #2b37bc;
-  color: #2b37bc;
-}
-
-.LinkInside:focus {
-  border-bottom: 3px solid #2b37bc;
-  color: #2b37bc;
-}
-
 
 .Button_1 {
   font-family: Lato,Segoe UI,Roboto,Oxygen,Cantarell,Open Sans,Helvetica Neue,sans-serif;
