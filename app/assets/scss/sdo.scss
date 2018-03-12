@@ -7,11 +7,27 @@
   visibility: hidden;
 }
 
+@media not all and (min-resolution:.001dpcm) {#SDO {
+  width: 10px;
+  height: 10px;
+  display:  block;
+  float: left;
+  margin-top: -255px;
+}}
+
+@-moz-document url-prefix() {#SDO {
+  width: 10px;
+  height: 10px;
+  display:  block;
+  float: left;
+  margin-top: -255px;
+}}
+
 #sdo{
   position: relative;
   display: block;
   color: #1760c8;
-  height: 675px;
+  height: 545px;
   padding-top: 100px;
   text-align: right;
 }

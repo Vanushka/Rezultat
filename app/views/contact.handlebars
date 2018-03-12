@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+  <div id='Contacts'>
+    <div id='Contact' />
+    <Container>
+      <h1>Контакты</h1>
+    </Container>
+    {{msg}}
+    <Form name='form' id='form' action="/send" method="post">
+        <label htmlFor='username' type='text'>Имя</label>
+        <input placeholder='Имя' name='name' required />
+        <label htmlFor='email'>E-mail</label>
+        <input name='email' type='email' placeholder='E-mail' id='email' required />
+        <label htmlFor='phone'>Телефон</label>
+        <Input name='phone' id='phone' type='tel' maskChar='' pattern='[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}' minlength='18' maxlength='18' placeholder='+7(' required />
+        <label type='message'>Введите своё сообщение</label>
+        <textarea name='message' id='message' type='message' placeholder='Сообщение' required></textarea>
+      <button type='submit'>Отправить</button>
+    </Form>
+  </div>
+</body>
+</html>

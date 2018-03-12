@@ -3,15 +3,30 @@
   height: 10px;
   display:  block;
   float: left;
-  margin-top: 135px;
+  margin-top: 137px;
 }
+@media not all and (min-resolution:.001dpcm) {#ForCustomers {
+  width: 10px;
+  height: 10px;
+  display:  block;
+  float: left;
+  margin-top: -274px;
+}}
+
+@-moz-document url-prefix() {#ForCustomers {
+  width: 10px;
+  height: 10px;
+  display:  block;
+  float: left;
+  margin-top: -275px;
+}}
 
 #forCustomers{
   position: relative;
   display: block;
   color: #1760c8;
   text-align: right;
-  height: 675px;
+  height: 710px;
   margin: 0 auto;
   padding-top: 110px;
 }

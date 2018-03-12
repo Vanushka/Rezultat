@@ -1,4 +1,4 @@
-#about {
+#customers {
   background: linear-gradient(155deg, #2b037e, #263caf, #1760c8, #0096ff, #00b5c6, #1ad3df, #a3fffc);
   top: 0;
   height: 710px;
@@ -6,17 +6,12 @@
   display:  block;
 }
 
-@media not all and (min-resolution:.001dpcm) {#about {
+@media not all and (min-resolution:.001dpcm) {#customers {
   height: 745px;
   }
 }
 
-@-moz-document url-prefix(){#about {
-  height: 770px;
-  }
-}
-
-#ab {
+#cus {
     width: 10px;
     height: 10px;
     display:  block;
@@ -25,6 +20,6 @@
     left: 0;
 }
 
-.AboutContainer {
+.CustomersContainer {
     padding-top: 180px;
 }

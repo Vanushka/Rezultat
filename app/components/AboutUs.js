@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Header } from 'semantic-ui-react';
-import { Link } from 'react-router-dom';
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 import img from '../assets/images/bussiness.png';
 
 
@@ -23,7 +23,7 @@ const AboutUs = () => (
       - решение юридических вопросов.<br />
     </p>
   </Container>
-  <Link className='Button_2' to='/about' href='/about'>Подробнее...</Link>
+  <NavLink className='Button_2' to='/about#ab' href='/about'>Подробнее...</NavLink>
     </div>
 );
 

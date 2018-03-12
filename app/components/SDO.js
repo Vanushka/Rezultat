@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 import { Container } from 'semantic-ui-react';
 import img from '../assets/images/bussiness3.png';
 
@@ -14,7 +14,7 @@ const ContainerExampleContainer = () => (
     </Container>
     <div id='VerticalLine3' />
     <img className='icon3' alt='Картинка' src='images/bussiness3.png' />
-    <Link className='Button_5' href='/SistemsDO' to='/SistemsDO'>Подробнее...</Link>
+    <NavLink className='Button_5' href='/SistemsDO' to='/SistemsDO#sdO'>Подробнее...</NavLink>
   </div>
 );
 

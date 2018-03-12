@@ -7,10 +7,26 @@
   margin-top: 127px;
 }
 
+@media not all and (min-resolution:.001dpcm) {#ForSuppliers {
+  width: 10px;
+  height: 10px;
+  display:  block;
+  float: left;
+  margin-top: -284px;
+}}
+
+@-moz-document url-prefix() {#ForSuppliers {
+  width: 10px;
+  height: 10px;
+  display:  block;
+  float: left;
+  margin-top: -285px;
+}}
+
 #Suppliers {
   background: linear-gradient(155deg, #2b037e, #263caf, #1760c8, #0096ff, #00b5c6, #1ad3df, #a3fffc);
   color: #fff;
-  height: 675px;
+  height: 710px;
   padding-top: 130px;
   padding-left: 160px;
   display: block;

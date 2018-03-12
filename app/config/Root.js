@@ -11,6 +11,7 @@ const Root = () => {
     <Routes location='hash'>
       <div>
         <Route exact strict path='/' component={App} />
+        <Route path='/#AboutUs' />
         <Route exact path='/About' component={About} />
         <Route exact path='/Customers' component={Customers} />
         <Route exact path='/Suppliers' component={Suppliers} />

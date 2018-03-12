@@ -6,9 +6,31 @@
   margin-top: 127px;
 }
 
+@media not all and (min-resolution:.001dpcm) {
+  #AboutUs {
+    width: 10px;
+    height: 10px;
+    display:  block;
+    float: left;
+    margin-top: -284px;
+  }
+
+  #ContainerEx {
+    height: 695px;
+  }
+}
+
+@-moz-document url-prefix() {#AboutUs {
+  width: 10px;
+  height: 10px;
+  display:  block;
+  float: left;
+  margin-top: -285px;
+}}
+
 #ContainerEx {
   background: linear-gradient(155deg, #2b037e, #263caf, #1760c8, #0096ff, #00b5c6, #1ad3df, #a3fffc);
-  height: 675px;
+  height: 710px;
   padding-top: 130px;
   display: block;
   position: relative;

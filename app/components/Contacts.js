@@ -1,29 +1,37 @@
-import React from 'react';
-import { Button, Form, Container, Divider } from 'semantic-ui-react';
+/* eslint-disable */
+import React, { Component } from 'react';
+import { Button, Form, Container } from 'semantic-ui-react';
+import InputMask from 'react-input-mask';
 
-const ContainerExampleAlignment = () => (
+
+export default class NameForm extends Component {
+
+  render() {
+    return (
   <div id='Contacts'>
-    <Container textAlign='justified'>
-      <Divider />
+    <div id='Contact' />
+    <Container>
       <h1>Контакты</h1>
     </Container>
-    <Form>
+    <Form name='form' id='form' method="post">
       <Form.Field>
-        <input placeholder='ФИО' />
+        <label htmlFor='username' type='text'>Имя</label>
+        <input placeholder='Имя' name='name' required />
+      </Form.Field>
+      <Form.Field noValidate>
+        <label htmlFor='email'>E-mail</label>
+        <input name='email' type='email' placeholder='E-mail' id='email' required />
+      </Form.Field>
+      <Form.Field noValidate>
+        <label htmlFor='phone'>Телефон</label>
+        <InputMask name='phone' id='phone' type='tel' maskChar='' pattern='[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}' minlength='18' maxlength='18' placeholder='+7(' required />
       </Form.Field>
       <Form.Field>
-        <input placeholder='E-mail' />
+        <label type='message'>Введите своё сообщение</label>
+        <textarea name='message' id='message' type='message' placeholder='Сообщение' required />
       </Form.Field>
-      <Form.Field>
-        <input placeholder='+7(' />
-      </Form.Field>
-      <Form.Field>
-        <Form.Radio label='Заказчик' control='input' value='ruby' type='radio' name='htmlRadios' />
-        <Form.Radio label='Поставщик' control='input' value='ruby' type='radio' name='htmlRadios' />
-      </Form.Field>
-      <Button className='Button_2' type='submit'>Отправить</Button>
+      <Button className='Button_2' type='submit' onsubmit="fnc()">Отправить</Button>
     </Form>
-  </div>
-);
-
-export default ContainerExampleAlignment;
+  </div>);
+  }
+}

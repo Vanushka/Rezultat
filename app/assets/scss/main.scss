@@ -5,9 +5,12 @@
 @import "forcustomers";
 @import "forsuppliers";
 @import "SDO";
-@import "contacts";
 @import "about";
-@import "style";
+@import "customers";
+@import "suppliers";
+@import "sistemsdo";
+@import "contacts";
+@import "footer";
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
@@ -16,6 +19,24 @@
   padding: 0;
 }
 
+html {
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0;
+  position: relative;
+}
+
 img {
   margin: 0;
+}
+
+#Home {
+  width: 10px;
+  height: 10px;
+  display:  block;
+  cursor: pointer;
+  float: left;
+  top: 0;
 }

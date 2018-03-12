@@ -1,33 +1,31 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
-import { HashLink as alias } from 'react-router-hash-link';
+import { NavHashLink as NavLink } from 'react-router-hash-link';
+import 'react-router-dom';
 import img from '../assets/images/logo_1.png';
 import InputExampleActionDropdown from './InputExampleActionDropdown';
-import style from '../assets/scss/style.scss';
 
 export default class Header extends Component {
   render() {
     return (
       <div id='header' className='HeaderClone'>
-        <div id='Home' />
-        <alias to='/#Home' activeClassName='current' href='/#Home'><img className='icon' alt='Картинка' src='images/logo_1.png' /></alias>
+        <NavLink smooth to='/#Home' activeClassName='current' href='/#Home'><img className='icon' alt='Картинка' src='images/logo_1.png' /></NavLink>
         <div className='Link'>
           <div>
             <ul>
               <li>
-                <NavLink className='LinkInside' smooth to='/about' exact activeClassName='current' href='/#AboutUs'>О нас</NavLink>
+                <NavLink className='LinkInside' smooth to='/#AboutUs' activeClassName='selected' href='/#AboutUs' hash='/#AboutUs'>О нас</NavLink>
               </li>
               <li>
-                <NavLink className='LinkInside' smooth to='/#ForCustomers' exact activeClassName='current' href='/#ForCustomers' >Для заказчиков</NavLink>
+                <NavLink className='LinkInside' smooth to='/#ForCustomers' activeClassName='selected' href='/#ForCustomers' >Для заказчиков</NavLink>
               </li>
               <li>
-                <NavLink className='LinkInside' smooth to='/#ForSuppliers' exact activeClassName='current' href='/#ForSuppliers'>Для поставщиков</NavLink>
+                <NavLink className='LinkInside' smooth to='/#ForSuppliers' activeClassName='selected' href='/#ForSuppliers'>Для поставщиков</NavLink>
               </li>
               <li>
-                <NavLink className='LinkInside' smooth to='/#SDO' exact activeClassName='current' href='/#SDO' >СДО</NavLink>
+                <NavLink className='LinkInside' smooth to='/#SDO' activeClassName='selected' href='/#SDO' >СДО</NavLink>
               </li>
               <li>
-                <NavLink className='LinkInside' smooth to='/#Contacts' exact activeClassName='current' href='/#Contacts'>Контакты</NavLink>
+                <NavLink className='LinkInside' smooth to='/#Contact' activeClassName='selected' href='/#Contact'>Контакты</NavLink>
               </li>
             </ul>
             <a className='Button_1' href='#callbackwidget'>Заказать звонок</a>
