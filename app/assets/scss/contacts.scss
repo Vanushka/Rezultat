@@ -74,6 +74,10 @@ h1 {
   border-color: red;
 }
 
+.ui.form .field .ui.input {
+  width: 300px;
+}
+
 .ui.form .field .ui.input input{
   content: '';
   margin: 0px 0ex;
@@ -111,8 +115,8 @@ h1 {
   border: 2px solid silver;
 }
 
-.ui.form textarea:not([rows]) {
-  width: 500px;
+.ui.form textarea {
+  width: 400px;
   height: 100px;
   resize: none;
   border: 2px solid silver;

@@ -6,20 +6,9 @@ import './assets/scss/main.scss';
 
 import Root from './config/Root';
 
-const render = (Component) => {
-  ReactDOM.hydrate(
-    <AppContainer>
-      <Component />
-    </AppContainer>,
-    document.getElementById('root'),
-  );
-};
-
-render(Root);
-
-if (module.hot) {
-  module.hot.accept('./config/Root', () => {
-    const newApp = require('./config/Root').default;
-    render(newApp);
-  });
-}
+ReactDOM.hydrate(
+  <AppContainer>
+    <Root />
+  </AppContainer>,
+  document.getElementById('root'),
+);

@@ -7,31 +7,27 @@ const nodemailer = require('nodemailer');
 
 const app = express();
 
-// создаем парсер для данных application/x-www-form-urlencoded
-// let urlencodedParser = bodyParser.urlencoded({extended: false});
 
-app.engine('handlebars', exphbs());
-app.set('view engine', 'handlebars');
-
-app.use("/components", express.static(path.join(__dirname,  'components')));
-
+app.use(express.static(path.join(__dirname,  './build/')));
+app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
 
-app.get('/', (req, response) => {
-  response.render('contact');
-});
 
-app.post('/send', (req, res) => {
+app.post('/contact', (req, res) => {
+
+  res.end(JSON.stringify(req.body));
+
+  const cForm = req.body
+  console.log(cForm)
   const output = `
     <h3>Контактные данные:</h3>
     <ul>
-      <li>Имя: ${req.body.name}</li>
-      <li>Почта: ${req.body.email}</li>
-      <li>Телефон: ${req.body.phone}</li>
+      <li>Имя: ${cForm.name}</li>
+      <li>Почта: ${cForm.email}</li>
+      <li>Телефон: ${cForm.phone}</li>
     </ul>
     <h3>Сообщение</h3>
-    <p>${req.body.message}</p>
+    <p>${cForm.message}</p>
   `;
 
 // create reusable transporter object using the default SMTP transport
@@ -63,8 +59,8 @@ app.post('/send', (req, res) => {
         }
         console.log('Message sent: %s', info.messageId);
         console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-        res.render('contact', {msg: 'Email hase been send'});
+        res.render('contact', {msg: 'Спасибо, Ваша заявка принята. В скором времени наши менеджеры свяжутся с Вами.'});
     });
-    });
+});
 
-app.listen(3000, () => console.log('Server Started...'));
+app.listen(3001, () => console.log('Server Started...'));

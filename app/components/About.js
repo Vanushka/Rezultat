@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 import { Container } from 'semantic-ui-react';
 import Header from './Header';
@@ -11,8 +12,10 @@ const About = () => {
       <div id='about'>
       <Container text className='AboutContainer'>
         <h1 as='h2'>О нас</h1>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede link mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede link mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
+        <p>"Результат" видит свою миссию в надежном, эффективном и своевременном решении возникающих вопросов Наших клиентов.</p>
+        <p>Стратегической целью является становление ООО "Результат" лидером рынка на территории Российской Федерации, рост эффективности деятельности, реализация современных технологий в повседневной деятельности.</p>
+        <p>"Результат" располагает квалифицированным персоналом и отлаженными бизнес процессами. Осуществляет свою деятельность в более 60 регионах Российской Федерации. В настоящее время компания активно реализует масштабные проекты по освоению новых территорий и смежных направлений.</p>
+        <p>"Результат" - надежный партнер Вашего бизнеса, способный разрешать сложные ситуации. Компания входит в 100 лучших образовательных организаций России.</p>
       </Container>
       </div>
       <Footer />
