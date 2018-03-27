@@ -7,7 +7,7 @@ import Footer from './Footer';
 const About = () => {
   return (
     <div>
-      <div id='ab' />
+      <div id='up' />
       <Header />
       <div id='about'>
       <Container text className='AboutContainer'>

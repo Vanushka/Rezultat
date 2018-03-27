@@ -6,13 +6,13 @@ import Footer from './Footer';
 const Suppliers = () => {
   return (
   <div>
-    <div id='sup' />
+    <div id='up' />
       <Header />
     <div id='Supplier'>
       <Container text className='SuppliersContainer'>
         <h1 as='h2'>Для поставщиков</h1>
-        <p>Блок 44-ФЗ (15 000)</p>
-        <p>Блок 223-ФЗ (15 000)</p>
+        <img className='iconDanger' alt='Картинка' src='images/Danger.png' />
+        <p className='DangerMessage'>Данная страница находится в стадии разработки<br />Просим прощения за причинённые неудобства</p>
       </Container>
     </div>
     <Footer />

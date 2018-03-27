@@ -21,7 +21,7 @@ const ContainerExampleFluid = () => (
           <br />- Как читать документы заказчика?<br />- Как подготовить заявку на участие в тендерах?
           <br />- Что делать если заказчик нарушает Ваши права?</p>
     </Container>
-    <NavLink className='Button_4' href='/Suppliers#sup' to='/Suppliers#sup' >Подробнее...</NavLink>
+    <NavLink className='Button_4' href='/Suppliers#up' to='/Suppliers#up' >Подробнее</NavLink>
   </div>
 );
 

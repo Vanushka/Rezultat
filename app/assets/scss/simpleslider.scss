@@ -1,8 +1,23 @@
+.slick-initialized .slick-slide {
+    margin-top: 67px;
+    outline: none;
+    background-size: 100%;
+    width: 1440px;
+    height: 778px;
+    display: block;
+    position: relative;
+  }
+
 .slick-slider {
     margin-bottom: 0;
-    height: 860px;
+    height: 825px;
     display: block;
     margin: 0 auto;
+}
+
+@media not all and (min-resolution:.001dpcm) {.slick-slide {
+    height: 1000px;
+  }
 }
 
 .left,aligned {
@@ -14,7 +29,7 @@
     outline: none;
     background-size: 100%;
     width: 1440px;
-    height: 761px;
+    height: 758px;
     display: block;
     position: relative;
 }

@@ -5,7 +5,7 @@ const InputExampleActionDropdown = () => (
   <Input
     icon='search'
     iconPosition='left'
-    placeholder='¿Введите поисковый запрос?'
+    placeholder='Поиск'
   />
 );
 

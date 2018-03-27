@@ -4,6 +4,80 @@
   margin-left: 30px;
 }
 
+#Dropdown {
+  position: absolute;
+  display: inline-block;
+  z-index: 1000;
+  color: rgb(147,158,174);
+  padding-bottom: -0.3rem;
+  padding-top: 0.85%;
+  cursor: pointer;
+  font-family: Ubuntu,Segoe UI,Roboto,Oxygen,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  margin-left: -343px;
+  width: 300px;
+}
+
+#Dropdown:hover{
+  color: #2b37bc;
+}
+
+.activeD {
+  color: #2b37bc;
+  background: 0 0;
+  font-weight: 700;
+  box-shadow: none;
+  z-index: 12;
+  display: block;
+  line-height: 1em;
+  padding: .78571429rem 1.14285714rem!important;
+  font-size: 1rem;
+}
+
+.activeD:hover {
+  background-color: #f3f3f3;
+}
+
+.ui.dropdown .menu{
+  position: absolute;
+}
+
+.ui.dropdown .menu .active.item{
+  color: #2b37bc;
+}
+
+.ui.dropdown>.dropdown.icon{
+  visibility: hidden;
+  height: 1.3em;
+}
+
+.ui.simple.active.dropdown>.menu, .ui.simple.dropdown:hover>.menu :hover{
+  color: #2b37bc;
+}
+
+.ui.simple.active.dropdown>.menu, .ui.simple.dropdown:hover>.menu {
+    overflow: visible;
+    width: auto;
+    height: auto;
+    top: 100%!important;
+    opacity: 1;
+}
+
+.ui.dropdown .menu>.item {
+    color: rgb(147,158,174);
+    padding: 0;
+}
+
+#VerticalLineHeader {
+    border-right: 1px solid #94a0b2;
+    width: 5px;
+    height: 50px;
+    margin-left: -31px;
+    position: absolute;
+    display: inline-block;
+}
+
 #header {
   z-index: 1000;
   position: relative;
@@ -15,7 +89,7 @@
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
   background: #fff;
   display: block;
-  overflow: hidden;
+  overflow: visible;
 }
 
 ul, li {
@@ -24,26 +98,27 @@ ul, li {
   text-align: center;
   list-style: none;
   margin-right: 5px;
+  margin-left: -20px;
   display: inline;
 }
 
 .Link {
   top: 0;
   left: 0;
-  margin-top: 2.5rem;
+  margin-top: 2.3rem;
   width: 80%;
   float: right;
   display: block;
+  margin-right: -290px;
 }
 
-.LinkInside{
+#LinkInside{
   padding-left: 2%;
   padding-right: 2%;
-  padding-bottom: 2.5rem;
+  padding-bottom: 2.7rem;
   padding-top: 1%;
   margin-left: 20px;
   text-align: center;
-  color: rgb(147,158,174);
   cursor: pointer;
   font-family: Ubuntu,Segoe UI,Roboto,Oxygen,Cantarell,Open Sans,Helvetica Neue,sans-serif;
   font-style: normal;
@@ -56,14 +131,19 @@ ul, li {
   }
 }
 
-.LinkInside:hover {
+#LinkInside:hover {
   border-bottom: 3px solid #2b37bc;
   color: #2b37bc;
   text-align: center;
   display: inline-block;
 }
 
-.LinkInside:active {
+#LinkInside:active {
+  border-bottom: 3px solid #2b37bc;
+  color: #2b37bc;
+}
+
+#LinkInside:target {
   border-bottom: 3px solid #2b37bc;
   color: #2b37bc;
 }
@@ -86,13 +166,17 @@ ul, li {
   border: 2px solid #00a3ff;
   color: #00a3ff;
   position: relative;
-  margin-right: 40px;
+  margin-right: 318px;
   cursor: pointer;
   outline: 0;
   display: block;
   float: right;
 }
 
+.active {
+  color: #2b37bc;
+  border-bottom: 3px solid #2b37bc;
+}
 
 .Button_1:hover {
   color: #fff;
@@ -134,7 +218,7 @@ ul, li {
 }
 
 .ui.input input::placeholder {
-  color:#fff;
+  color:#94a0b2;
 }
 
 .ui.input {
@@ -151,13 +235,13 @@ ul, li {
 
 .ui.input input:focus {
   background: linear-gradient(155deg,  #3a0383, #263caf, #1760c8, #0096ff, #00b5c6);
-  color: #fff;
+  color: #94a0b2;
 }
 
 .ui.icon {
   padding-left: 50px;
   font-size: 1.4em;
-  color: #fff;
+  color: #94a0b2;
 }
 
 .ui.icon.input>i.icon {

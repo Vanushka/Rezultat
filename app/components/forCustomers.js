@@ -6,7 +6,7 @@ import img from '../assets/images/bussiness1.png';
 
 const ContainerExample = () => (
   <div>
-  <Container text>
+  <Container fluid>
     <div id='forCustomers'>
       <div id='ForCustomers' />
       <h1>Для Заказчиков</h1>
@@ -19,7 +19,7 @@ const ContainerExample = () => (
       <br />чтобы ее не отклонили, эффективные стратегии участия в тендере.
     </p>
     <div id='VerticalLine1' />
-    <NavLink className='Button_3' href='/Customers' to='/Customers#cus'>Подробнее...</NavLink>
+    <NavLink className='Button_3' href='/Customers' to='/Customers#up'>Подробнее</NavLink>
     </div>
   </Container>
   <img className='icon2' alt='Картинка' src='images/bussiness1.png' />

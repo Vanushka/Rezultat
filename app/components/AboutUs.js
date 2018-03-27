@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Header } from 'semantic-ui-react';
+import { Container } from 'semantic-ui-react';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 import img from '../assets/images/bussiness.png';
 
@@ -11,8 +11,8 @@ const AboutUs = () => (
         <img className='icon1' alt='Картинка' src='images/bussiness.png' />
       </div>
       <div id='VerticalLine' />
-  <Container text>
-    <Header as='h2'>О нас</Header>
+      <h2 className='TextA' as='h2'>О нас</h2>
+  <Container fluid>
     <p className='Text' >ООО Результат - центр информационно-технической и правовой поддержки.<br />
     Основные направления деятельности:<br />
       - повышение квалификации и профессиональная подготовка;<br />
@@ -23,7 +23,7 @@ const AboutUs = () => (
       - решение юридических вопросов.<br />
     </p>
   </Container>
-  <NavLink className='Button_2' to='/about#ab' href='/about'>Подробнее...</NavLink>
+  <NavLink className='Button_2' to='/about#up' href='/about'>Подробнее</NavLink>
     </div>
 );
 

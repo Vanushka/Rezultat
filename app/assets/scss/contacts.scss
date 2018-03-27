@@ -18,11 +18,15 @@
   margin-top: -190px;
 }}
 
+*|html[xmlns*=""]{#Contacts{
+  height: 600px;
+}}
+
 #Contacts {
   background: linear-gradient(155deg, #2b037e, #263caf, #1760c8, #0096ff, #00b5c6, #1ad3df, #a3fffc);
   color: #fff;
   width: 100%;
-  height: 580px;
+  height: 572px;
   margin-top: 165px;
   padding-top: 35px;
   display: block;
@@ -34,16 +38,39 @@
   height: 620px;
 }}
 
-h1 {
-  padding-top: 20px;
+h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child {
+    margin-bottom: 0;
+    margin-left: -50px;
+    margin-top: -40px;
 }
 
+iframe {
+  position: absolute;
+  display: block;
+  margin-left: 251px;
+  margin-top: 200px;
+  width: 290px;
+  height: 140px;
+  frameborder: 0;
+  border: 0;
+}
+
+.IconsContact {
+  margin-left: 300px;
+  margin-top: 45px;
+  position: absolute;
+  display: block;
+}
 
 .ui.form{
-  padding-top:20px;
-  margin-top: -60px;
-  margin-left: 750px;
+  padding-top: 45px;
+  margin-left: 815px;
   position: absolute;
+}
+
+.ui.form .field {
+    clear: both;
+    margin: -19px 0px 1em;
 }
 
 .ui.form input:not([type]) {

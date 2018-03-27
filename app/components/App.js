@@ -1,4 +1,6 @@
+/* eslint-disable */
 import React from 'react';
+import Favicon from 'react-favicon';
 import Header from './Header';
 import SimpleSlider from './SimpleSlider';
 import AboutUs from './AboutUs';
