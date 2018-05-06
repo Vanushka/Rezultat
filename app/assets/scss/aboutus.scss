@@ -28,6 +28,18 @@
   margin-top: -285px;
 }}
 
+.Aboutus {
+  position: relative;
+  display: block;
+  text-align: left;
+  height: 710px;
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: -15px;
+  padding-left: 20px;
+  font-style: normal;
+}
+
 #ContainerEx {
   background: linear-gradient(155deg, #2b037e, #263caf, #1760c8, #0096ff, #00b5c6, #1ad3df, #a3fffc);
   height: 710px;
@@ -43,7 +55,6 @@ h2.ui.header {
 }
 
 .TextA {
-  padding-left: 155px;
   margin: calc(2rem - .14285714em) -50px;
   color: #fff;
   font-family: Lato,Segoe UI,Roboto,Oxygen,Cantarell,Open Sans,Helvetica Neue,sans-serif;
@@ -53,7 +64,6 @@ h2.ui.header {
 
 .Text {
   color: #fff;
-  padding-left: 155px;
 }
 
 .ui.header:first-child {
@@ -95,8 +105,8 @@ p {
 
 .icon1 {
   margin-top: -80px;
+  margin-right: -10px;
   float: right;
-  margin-right: 90px;
   width: 550px;
   height: 550px;
 }
@@ -105,16 +115,14 @@ p {
   border-right: 1px solid #fff;
   width: 5px;
   height: 400px;
-  margin-left: 90px;
   float: right;
-  margin-right: 20px;
-  margin-left: 0;
+  margin-right: 6px;
 }
 
 .Button_2 {
   font-family: Lato,Segoe UI,Roboto,Oxygen,Cantarell,Open Sans,Helvetica Neue,sans-serif;
   font-style: normal;
-  margin-left: 500px;
+  margin-left: 355px;
   margin-top: 20px;
   padding-left: 15px;
   padding-right: 15px;

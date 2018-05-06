@@ -57,8 +57,7 @@ export default class NameForm extends Component {
   <div id='Contacts'>
     <div id='Contact' />
     <Container>
-      <h1>Контакты</h1>
-    </Container>
+      <h1 className='ContH1'>Контакты</h1>
       <div className='IconsContact' >
         <p ><Icon disabled color={'white'} size={'large'} name='mail' />&nbsp;&nbsp;rezultatc@gmail.com</p>
         <p ><Icon disabled color={'white'} size={'large'} name='phone' />&nbsp;&nbsp;+7 999 150-20-07</p>
@@ -75,6 +74,7 @@ export default class NameForm extends Component {
       <Form.TextArea label={'Сообщение'} placeholder='Введите своё сообщение' name='message' value={message} onChange={this.handleInputChange} />
       <Button className='Button_2' type='submit'>Отправить</Button>
     </Form>
+    </Container>
   </div>);
   }
 }

@@ -20,7 +20,14 @@
   height: 10px;
   display: block;
   margin-top: -264px;
-}}
+}
+h1 {
+  font-family: Lato,Segoe UI,Roboto,Oxygen,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+  padding-left: 65px;
+  padding-top: 50px;
+  font-size: 2.5rem;
+}
+}
 
 @-moz-document url-prefix() {#ForCustomers {
   width: 10px;
@@ -46,10 +53,10 @@
   color: #1760c8;
   text-align: left;
   height: 710px;
-  width: 1166px;
-  padding-left: 559px;
+  width: 1200px;
+  padding-left: 580px;
   margin: 0 auto;
-  padding-top: 110px;
+  padding-top: 150px;
   font-style: normal;
   font-family: Lato,Segoe UI,Roboto,Oxygen,Cantarell,Open Sans,Helvetica Neue,sans-serif;
 }
@@ -65,8 +72,8 @@ h1 {
   float: left;
   width: 515px;
   height: 330px;
-  margin-top: -590px;
-  margin-left: 70px;
+  margin-top: -300px;
+  margin-left: -646px;
 }
 
 #VerticalLine1 {
@@ -74,7 +81,7 @@ h1 {
   width: 5px;
   height: 400px;
   float: right;
-  margin-right: 670px;
+  margin-right: 655px;
   margin-top: -300px;
 }
 
@@ -84,7 +91,7 @@ h1 {
   font-style: normal;
   text-align: center;
   margin-right: -249px;
-  margin-left: 63px;
+  margin-left: 80px;
   margin-top: 34px;
   padding-left: 30px;
   padding-right: 30px;

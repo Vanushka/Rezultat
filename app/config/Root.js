@@ -3,8 +3,9 @@ import { BrowserRouter as Routes, Route } from 'react-router-dom';
 import App from '../components/App';
 import Basis from '../components/Basis';
 import Structure from '../components/Structure';
-import Documents from '../components/Documents';
 import Leadership from '../components/Leadership';
+import Education from '../components/Education';
+import Documents from '../components/Documents';
 import About from '../components/About';
 import Customers from '../components/Customers';
 import Suppliers from '../components/Suppliers';
@@ -17,8 +18,9 @@ const Root = () => {
         <Route exact strict path='/' component={App} />
         <Route exact path='/Basis' component={Basis} />
         <Route exact path='/Structure' component={Structure} />
-        <Route exact path='/Documents' component={Documents} />
         <Route exact path='/Leadership' component={Leadership} />
+        <Route exact path='/Education' component={Education} />
+        <Route exact path='/Documents' component={Documents} />
         <Route exact path='/About' component={About} />
         <Route exact path='/Customers' component={Customers} />
         <Route exact path='/Suppliers' component={Suppliers} />

@@ -18,11 +18,11 @@ const ContainerExample = () => (
       <br />знать: как составить заявку на участие в котировке и аукционе,
       <br />чтобы ее не отклонили, эффективные стратегии участия в тендере.
     </p>
+    <img className='icon2' alt='Картинка' src='images/bussiness1.png' />
     <div id='VerticalLine1' />
     <NavLink className='Button_3' href='/Customers' to='/Customers#up'>Подробнее</NavLink>
     </div>
   </Container>
-  <img className='icon2' alt='Картинка' src='images/bussiness1.png' />
   </div>
 );
 

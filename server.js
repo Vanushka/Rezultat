@@ -36,8 +36,8 @@ app.post('/contact', (req, res) => {
       port: 587,
       secure: false, // true for 465, false for other ports
       auth: {
-          user: 'rezultatc@gmail.com', // generated ethereal user
-          pass: '89876812188' // generated ethereal password
+          user: 'spqk1319@gmail.com', // generated ethereal user
+          pass: '***************' // generated ethereal password
       },
       tls:{
         rejectUnauthorized:false
@@ -46,8 +46,8 @@ app.post('/contact', (req, res) => {
 
   // setup email data with unicode symbols
   let mailOptions = {
-      from: '"Сообщение от:" <rezultatc@gmail.com>', // sender address
-      to: 'rezultatc@gmail.com', // list of receivers
+      from: '"Сообщение от:" <spqk1319@gmail.com>', // sender address
+      to: 'spqk1319@gmail.com', // list of receivers
       subject: 'Сообщение с сайта rezyltat.com', // Subject line
       text: 'Hello world?', // plain text body
       html: output // html body
@@ -57,7 +57,7 @@ app.post('/contact', (req, res) => {
       if (error) {
           return console.log(error);
       }
-      console.log('Message sent: %s', 'rezultatc@gmail.com');
+      console.log('Message sent: %s', 'spqk1319@gmail.com');
       console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
       // res.render('contact', {msg: 'Спасибо, Ваша заявка принята. В скором времени наши менеджеры свяжутся с Вами.'});
   });

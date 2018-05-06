@@ -14,11 +14,11 @@ const ContainerExampleContainer = () => (
       <p>Наш курс разработан экспертами-практиками в <br />сфере госзакупок с опытом более 8 лет. <br />Лекции адаптированы к самым актуальным изменениям <br />в законодательстве и судебной практики.</p>
       <p>Курс предназначен как для тех, кто уже освоил основы госзаказа и <br />желает двигаться дальше, так и для новичков!</p>
       </div>
-    <div id='VerticalLine3' />
+      <img className='icon4' alt='Картинка' src='images/bussiness3.png' />
+    <div id='VerticalLine4' />
     <NavLink className='Button_5' href='/SistemsDO' to='/SistemsDO#up'>Подробнее</NavLink>
       </div>
     </Container>
-    <img className='icon3' alt='Картинка' src='images/bussiness3.png' />
   </div>
 );
 

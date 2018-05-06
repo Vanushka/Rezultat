@@ -4,7 +4,7 @@
   display:  inline-block;
   float: left;
   margin-left: -51px;
-  margin-top: 127px;
+  margin-top: 128px;
 }
 
 @media not all and (min-resolution:.001dpcm) {#ForSuppliers {
@@ -33,20 +33,31 @@
   position: relative;
 }
 
-#VerticalLine2 {
+.forsuppliers {
+  position: relative;
+  display: block;
+  text-align: left;
+  height: 710px;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-style: normal;
+}
+
+#VerticalLine3 {
   border-right: 1px solid #fff;
+  margin-top: -398px;
   width: 5px;
   height: 400px;
-  margin-left: 90px;
   float: right;
-  margin-right: 20px;
-  margin-left: 0;
+  margin-right: 80px;
 }
 
 .Button_4 {
-  ont-family: Lato,Segoe UI,Roboto,Oxygen,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+  font-family: Lato,Segoe UI,Roboto,Oxygen,Cantarell,Open Sans,Helvetica Neue,sans-serif;
   font-style: normal;
-  margin-left: 354px;
+  margin-left: 280px;
   margin-top: 20px;
   padding-left: 15px;
   padding-right: 15px;
@@ -80,4 +91,16 @@
   color: #fff;
   background-color: #1760c8;
   border: 2px solid #1760c8;
+  }
+
+  .icon3 {
+    margin-top: -500px;
+    margin-right: -10px;
+    float: right;
+    width: 550px;
+    height: 550px;
+  }
+
+  .TextC{
+    margin-left: -125px !important;
   }

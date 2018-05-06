@@ -6,6 +6,7 @@
 @import "forsuppliers";
 @import "SDO";
 @import "about";
+@import "basis";
 @import "customers";
 @import "suppliers";
 @import "sistemsdo";
@@ -23,15 +24,11 @@ html {
   overflow-y: scroll;
 }
 
-// @media not all and (min-resolution:.001dpcm) {body{
-//   font-size: bold;
-//   }
-// }
-
 body {
   margin: 0;
   position: relative;
   overflow-x: hidden;
+  font-style: normal;
   font-family: Lato,Segoe UI,Roboto,Oxygen,Cantarell,Open Sans,Helvetica Neue,sans-serif;
 }
 
@@ -48,9 +45,17 @@ img {
   top: 0;
 }
 
+@media not all and (min-resolution:.001dpcm) {
+  p {
+    font-weight: normal;
+  }
+}
+
 p {
     font-size: 18px;
     margin: 0px -51px 1em;
+    font-style: normal;
+    font-family: Lato,Segoe UI,Roboto,Oxygen,Cantarell,Open Sans,Helvetica Neue,sans-serif;
 }
 
 h1 {

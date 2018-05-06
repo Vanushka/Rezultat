@@ -17,10 +17,11 @@ export default class Header extends Component {
               <li>
                 <Dropdown id='Dropdown' className='TextD' text='Сведения об образовательной организации' simple item>
                   <Dropdown.Menu>
-                    <NavLink className={location.hash == "#up" ? "activeD" : "item"} to='/Basis#up' >Основные сведения</NavLink>
-                    <NavLink className={location.hash == "#up1" ? "activeD" : "item"} to='/Structure#up1' >Структура и органы усправления</NavLink>
-                    <NavLink className={location.hash == "#up2" ? "activeD" : "item"} to='/Documents#up2' >Документы</NavLink>
+                    <NavLink className={location.hash == "#up1" ? "activeD" : "item"} to='/Basis#up1' >Основные сведения</NavLink>
+                    <NavLink className={location.hash == "#up2" ? "activeD" : "item"} to='/Structure#up2' >Структура и органы усправления</NavLink>
                     <NavLink className={location.hash == "#up3" ? "activeD" : "item"} to='/Leadership#up3' >Руководство</NavLink>
+                    <NavLink className={location.hash == "#up4" ? "activeD" : "item"} to='/Education#up4' >Образование</NavLink>
+                    <NavLink className={location.hash == "#up5" ? "activeD" : "item"} to='/Documents#up5' >Документы</NavLink>
                   </Dropdown.Menu>
                 </Dropdown>
               </li>
@@ -41,7 +42,6 @@ export default class Header extends Component {
                 <NavLink className={location.hash == "#Contact" ? "active" : ""} id='LinkInside' smooth to='/#Contact' >Контакты</NavLink>
               </li>
             </ul>
-            <a className='Button_1' href='#callbackwidget'>Заказать звонок</a>
           </div>
         </div>
         <div><InputExampleActionDropdown /></div>

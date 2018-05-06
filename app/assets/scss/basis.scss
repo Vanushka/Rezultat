@@ -1,18 +1,18 @@
-#about {
+#aboutBasis {
   background: linear-gradient(155deg, #2b037e, #263caf, #1760c8, #0096ff, #00b5c6, #1ad3df, #a3fffc);
   top: 0;
-  height: 710px;
+  height: 1010px;
   width: 100%;
   display:  block;
 }
 
 @media not all and (min-resolution:.001dpcm) {#about {
-  height: 745px;
+  height: 1045px;
   }
 }
 
 @-moz-document url-prefix(){#about {
-  height: 770px;
+  height: 1070px;
   }
 }
 
@@ -27,4 +27,7 @@
 
 .AboutContainer {
     padding-top: 180px;
+}
+
+.TextB{
 }

@@ -3,7 +3,7 @@
   height: 10px;
   display:  block;
   float: left;
-  margin-top: 222px;
+  margin-top: 224px;
 }
 
 @media not all and (min-resolution:.001dpcm){#Contact{
@@ -26,7 +26,7 @@
   background: linear-gradient(155deg, #2b037e, #263caf, #1760c8, #0096ff, #00b5c6, #1ad3df, #a3fffc);
   color: #fff;
   width: 100%;
-  height: 572px;
+  height: 577px;
   margin-top: 165px;
   padding-top: 35px;
   display: block;
@@ -44,27 +44,30 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child {
     margin-top: -40px;
 }
 
+.ContH1 {
+  margin-top: 30px !important;
+}
+
 iframe {
   position: absolute;
   display: block;
-  margin-left: 251px;
+  margin-left: 140px;
   margin-top: 200px;
   width: 290px;
   height: 140px;
-  frameborder: 0;
   border: 0;
 }
 
 .IconsContact {
-  margin-left: 300px;
-  margin-top: 45px;
+  margin-top: 15px;
+  margin-left: 190px;
   position: absolute;
   display: block;
 }
 
 .ui.form{
-  padding-top: 45px;
-  margin-left: 815px;
+  padding-top: 15px;
+  margin-left: 700px;
   position: absolute;
 }
 
@@ -151,6 +154,10 @@ iframe {
 
 .ui.form textarea:not([rows]):invalid:not(:placeholder-shown) {
   border-color: red;
+}
+
+.inputForm{
+  position: relative;
 }
 
 .ui.button {
